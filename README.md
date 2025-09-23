@@ -24,9 +24,9 @@ Poniżej zamieszczony jest przykładowy kadr video.
      2) Wykorzystując np. polecenie cd przejść do stosownego katalogu
      3) Uruchomić właściwy program:
      4) 
-       - w Windows 11: wpisać DronLocalizWin.exe -r True   i potwierdzić to przez <Enter>
+       - w Windows 11: wpisać DronLocalizWin_v2.exe -r True   i potwierdzić to przez <Enter>
          (DronLocalizWin.exe --h  pokazuje pomoc)
-       - w Linuxie: > sudo DronLocalizLin.bin -r True
+       - w Linuxie: > sudo DronLocalizLin_v2.bin -r True
          (DronLocalizLin_v2.bin --h  pokazuje pomoc)
      5) Odpowiedzieć na stosowne pytania (w nawiasach podane są wartości domyślne):
 
