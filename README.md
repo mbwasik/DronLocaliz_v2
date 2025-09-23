@@ -2,7 +2,7 @@
   
 Program służy do automatycznej edycji tekstowych plików .SRT tworzonych jako dodatek do plików video .MP4 lub .LRF. Zawierają one ważne informacje takie jak data, czas, wsþółrzędne geograficzne, pułap lotu, parametry czcionki itp.
 
-Podstawową funkcjonalnością programu jest konwersja położeń geograficznych drona zapisanych w pliku .SRT na jego aktualny adres. Oprócz tego umożliwia on prostą edycję napisów. Tworzona jest równiez kopia oryginalnego pliku SRT. Ma ona rozszerzenie .SRT_copy.
+Podstawową funkcjonalnością programu jest konwersja położeń geograficznych drona zapisanych w pliku .SRT na jego aktualny adres. Dodatkowymi, wyświetlanymi atrybutami są: aktualne położenie geograficzne, aktualna odległość drona w poziomie od miejsca rozpoczęcia nagrywania, oraz aktualny przelot drona, również od punktu rozpoczęcia nagrywania. Oprócz tego umożliwia on prostą edycję napisów. Tworzona jest równiez kopia oryginalnego pliku SRT. Ma ona rozszerzenie .SRT_copy.
 Poniżej zamieszczony jest przykładowy kadr video.
 
 ![alt text](https://github.com/mbwasik/DronLocaliz_v2/blob/master/BD.png)
@@ -15,7 +15,7 @@ Poniżej zamieszczony jest przykładowy kadr video.
      1) W systemie utworzyć dowolny \<Katalog\> (katalog o dowolnej nazwie)
      2) 
        - w systemie Windows do katalogu <Katalog> skopiować zawartość katalogu DystrybucjaWindows,
-        czyli katalog _internal oraz plik DronLocalizWin.exe
+        czyli katalog _internal oraz plik DronLocalizWin_v2.exe
        - w systemie Linux do katalogu <Katalog> skopiować całą zawartość katalogu DystrybucjaLinux.
      3) Do katalogu \<Katalog\> skopiować z karty SD drona stosowne pliki MP4 i/lub LRF, oraz SRT.
 
@@ -27,7 +27,7 @@ Poniżej zamieszczony jest przykładowy kadr video.
        - w Windows 11: wpisać DronLocalizWin.exe -r True   i potwierdzić to przez <Enter>
          (DronLocalizWin.exe --h  pokazuje pomoc)
        - w Linuxie: > sudo DronLocalizLin.bin -r True
-         (DronLocalizLin.bin --h  pokazuje pomoc)
+         (DronLocalizLin_v2.bin --h  pokazuje pomoc)
      5) Odpowiedzieć na stosowne pytania (w nawiasach podane są wartości domyślne):
 
         a) wybrać plik SRT do przetwarzania  
@@ -42,4 +42,4 @@ Poniżej zamieszczony jest przykładowy kadr video.
 * Uwagi końcowe
   
      Do przeglądania nagrań video wykorzystywałem media playera VLC. Z innymi playerami bywa różnie, ale po umieszczniu napisów bezpośrednio w MP4 (też przy pomocy VLC), na pozostałych playerach też było OK.
-     Można również umieścić napisy bezpośrednio w MP4. Nie jest już wtedy potrzebny plik SRT, a także MP4 z napisami uruchamia sie bez problemów na innych przeglądarkach. Jak to zrobić? Tak skrótowo, w VLC:                                                  Plik--->Konwertuj/Zapisz--->Dodaj--->wybierz plik MP4--->Konwertuj/Zapisz--->Przeglądaj--->podaj nazwę nowego pliku MP4--->Save--->Start i chwilę odczekać na koniec "wtapiania".
+     Można również umieścić napisy bezpośrednio w MP4. Nie jest już wtedy potrzebny plik SRT, a także MP4 z napisami uruchamia sie bez problemów na innych przeglądarkach. Jak to zrobić? Tak skrótowo, w VLC:                                                  "Plik"--->"Konwertuj/Zapisz"--->"+Dodaj"(wybrać stosowny plik MP4)--->zaznaczyć "Użyj pliku z napisami"--->"Przegladaj"(wybrać stosowny plik SRT)--->"Konwertuj/Zapisz"--->"Przeglądaj"--->Wpisz dowolną nazwę nowego pliku MP4, koniecznie z rozszerzeniem MP4--->Save--->Start i chwilę odczekać na koniec "wtapiania".
